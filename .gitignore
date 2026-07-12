@@ -1,0 +1,7 @@
+*
+
+!.gitignore
+
+!/shortcut_scripts/
+!/shortcut_scripts/**
+!kglobalshortcutsrc
