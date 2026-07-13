@@ -1,7 +1,10 @@
 *
 
 !.gitignore
-
+!README.md
+!tmux.conf
 !/shortcut_scripts/
 !/shortcut_scripts/**
 !kglobalshortcutsrc
+!/nvim/
+!/nvim/init.lua
