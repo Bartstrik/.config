@@ -1,8 +1,8 @@
 #!/usr/bin/bash
 
-window="$(kdotool search firefox)"
+window="$(kdotool search brave)"
 if [[ $window == "" ]]; then 
-	firefox
+	brave
 else 
 	kdotool windowactivate $window	
 fi

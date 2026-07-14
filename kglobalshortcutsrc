@@ -267,7 +267,7 @@ switch to next activity=none,none,Switch to Next Activity
 switch to previous activity=none,none,Switch to Previous Activity
 toggle do not disturb=none,none,Toggle do not disturb
 
-[services][net.local.firefox.sh.desktop]
+[services][net.local.brave.sh.desktop]
 _launch=Alt+1
 
 [services][net.local.konsole.sh.desktop]
