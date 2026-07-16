@@ -278,3 +278,10 @@ _launch=Alt+S
 
 [services][net.local.spotify.sh.desktop]
 _launch=Alt+F1
+
+[services][net.local.thunar.sh.desktop]
+_launch=Alt+3
+
+[services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=none
+OpenWithoutScreenshot=none
