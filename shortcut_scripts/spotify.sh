@@ -1,8 +1,9 @@
 #!/usr/bin/bash
 
-window="$(kdotool search spotify-launcher)"
-if [[ $window == "" ]]; then 
+windows="$(kdotool search spotify-launcher)"
+if [[ $windows == "" ]]; then 
 	spotify-launcher
 else 
-	kdotool windowactivate $window	
+	IFS=" " read -r -a first_window <<< "$windows"
+	kdotool windowactivate $first_window	
 fi

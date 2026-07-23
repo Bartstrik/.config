@@ -1,8 +1,9 @@
 #!/usr/bin/bash
 
-window="$(kdotool search konsole)"
-if [[ $window == "" ]]; then 
+windows="$(kdotool search konsole)"
+if [[ $windows == "" ]]; then 
 	konsole
 else 
-	kdotool windowactivate $window	
+	IFS=" " read -r -a first_window <<< "$windows"
+	kdotool windowactivate $first_window	
 fi

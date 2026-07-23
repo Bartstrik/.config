@@ -1,8 +1,9 @@
 #!/usr/bin/bash
 
-window="$(kdotool search thunar)"
-if [[ $window == "" ]]; then 
+windows="$(kdotool search thunar)"
+if [[ $windows == "" ]]; then 
 	thunar
 else 
-	kdotool windowactivate $window	
+	IFS=" " read -r -a first_window <<< "$windows"
+	kdotool windowactivate $first_window	
 fi
