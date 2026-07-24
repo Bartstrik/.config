@@ -1,9 +1,8 @@
 #!/usr/bin/bash
 
-windows="$(kdotool search brave)"
-if [[ $windows == "" ]]; then 
+window="$(kdotool search brave -n -l 1)"
+if [[ $window == "" ]]; then 
 	brave
 else 
-	IFS=" " read -r -a first_window <<< "$windows"
-	kdotool windowactivate "$first_window"
+	kdotool windowactivate "$window"
 fi

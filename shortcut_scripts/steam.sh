@@ -1,9 +1,8 @@
 #!/usr/bin/bash
 
-windows="$(kdotool search steam)"
-if [[ $windows == "" ]]; then 
+window="$(kdotool search steam -n -l 1)"
+if [[ $window == "" ]]; then 
 	steam
 else 
-	IFS=" " read -r -a first_window <<< "$windows"
-	kdotool windowactivate $first_window	
+	kdotool windowactivate $window	
 fi

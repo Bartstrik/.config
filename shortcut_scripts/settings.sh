@@ -1,9 +1,8 @@
 #!/usr/bin/bash
 
-windows="$(kdotool search ssystemsetting)"
-if [[ $windows == "" ]]; then 
+window="$(kdotool search ssystemsetting -n -l 1)"
+if [[ $window == "" ]]; then 
 	systemsettings
 else 
-	IFS=" " read -r -a first_window <<< "$windows"
-	kdotool windowactivate $first_window	
+	kdotool windowactivate $window	
 fi
